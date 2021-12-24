@@ -1,0 +1,287 @@
+.previousnextbox{
+    overflow:auto;
+}
+
+.previousnextbox .previousnextholder{
+    float:right;
+}
+
+.circles{
+    text-align:center;
+    margin-top:40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f1f1f1;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 90%;
+    min-width: 300px;
+    flex: 80%;
+    
+}
+  
+h1 {
+    text-align: center;  
+}
+  
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+select{
+    margin-top: 16px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+  
+  /* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+  
+  /* Hide all steps by default: */
+.tab {
+    display: none;
+}
+  
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+#prevBtn {
+    background-color: #bbbbbb;
+}
+  
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+.step.active {
+    opacity: 1;
+}
+  
+  /* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.genrow {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+.left {
+    flex: 20%;
+    padding: 15px 0;
+  }
+  
+.left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+.right {
+    flex: 80%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+#myMenu li a:hover {
+    background-color: rgb(0, 184, 0);
+    color: white;
+  }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.genrow {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 20%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 80%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+
+.col-single{
+    flex-basis: 100%;
+}
+.col-double1{
+    flex-basis: 40%;
+    margin-right: 40px;
+}
+.col-double2{
+    flex-basis: 60%;
+}
+.col-triple1{
+    flex-basis: 33%;
+    margin-right: 20px;
+}
+.col-triple2{
+    flex-basis: 33%;
+    margin-right: 20px;
+}
+.col-triple3{
+    flex-basis: 33%;
+}
+
+.col-double-inv1{
+  flex-basis: 70%;
+  margin-right: 40px;
+}
+.col-double-inv2{
+  flex-basis: 30%;
+}
+
+.splitdiv{
+  display: flex;
+}
+
+.splitdivL{
+  flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.splitdivR{
+  flex-basis: 50%;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width:700px){
+  .row1{
+    flex-direction: column;
+
+  }
+  .col-double1{
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .col-double2{
+    flex-basis: 100%;
+  }
+
+  .col-triple1{
+    flex-basis: 100%;
+    margin-right: 0;
+
+  }
+
+  .col-triple2{
+    flex-basis: 100%;
+    margin-right: 0;
+
+  }
+
+  .col-triple3{
+    flex-basis: 100%;
+  }
+
+  select{
+    margin-bottom: 10px;
+  }
+}
